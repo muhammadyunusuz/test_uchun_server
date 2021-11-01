@@ -3,7 +3,7 @@ const mongo = require("./modules/mongo");
 const routes = require("./routes/routes");
 const app = express();
 
-app.listen(80, () => {
+app.listen(process.env.PORT, () => {
 	console.log("SERVER IS READY AT 80");
 });
 
