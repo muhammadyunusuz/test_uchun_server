@@ -16,7 +16,7 @@ app.use(
 
 async function server() {
 	try {
-		await mongo();
+		// await mongo();
 	} finally {
 		app.use("/v1", routes);
 	}
